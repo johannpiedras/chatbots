@@ -6,7 +6,8 @@ def processInput(text):
     with open('responses.json') as json_file:
         data = json.load(json_file)
         if data.get(text) == None:
-            print("Chatbot: Sorry, I don't understand")
+            print("I am Groot")
+#            print("Chatbot: Sorry, I don't understand")
         elif len(data[text]) == 1:
             print(data[text][0])
         else:
