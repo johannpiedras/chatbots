@@ -1,5 +1,6 @@
 import json
 import random
+import readline
 
 def processInput(text):
     with open('responses.json') as json_file:
@@ -15,5 +16,5 @@ def processInput(text):
 print('Welcome to this chatbot, type something to begin...')
 text = ''
 while text != 'bye':
-    text = raw_input("You: ")
+    text = input("You: ")
     processInput(text)
